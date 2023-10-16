@@ -25,6 +25,7 @@ WebBrowser::~WebBrowser()
 void WebBrowser::loadPage()
 {
     QString url = ui->lineEdit->text();
+
     if (!url.startsWith("https://") && !url.startsWith("http://"))
         url = "https://" + url;
 
