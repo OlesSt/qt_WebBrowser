@@ -23,7 +23,7 @@
       <height>461</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <layout class="QHBoxLayout" name="webFrame">
      <item>
       <spacer name="verticalSpacer">
        <property name="orientation">
@@ -45,28 +45,40 @@
       <x>10</x>
       <y>10</y>
       <width>771</width>
-      <height>61</height>
+      <height>71</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QPushButton" name="pushBack">
        <property name="text">
-        <string>Back</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/Image/Icon/back.png</normaloff>:/Image/Icon/back.png</iconset>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="pushForward">
        <property name="text">
-        <string>Forward</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/Image/Icon/forward.png</normaloff>:/Image/Icon/forward.png</iconset>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="pushUpdate">
        <property name="text">
-        <string>Update</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/Image/Icon/refresh.png</normaloff>:/Image/Icon/refresh.png</iconset>
        </property>
       </widget>
      </item>
@@ -76,7 +88,11 @@
      <item>
       <widget class="QPushButton" name="pushFind">
        <property name="text">
-        <string>Find</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/Image/Icon/search.png</normaloff>:/Image/Icon/search.png</iconset>
        </property>
       </widget>
      </item>
@@ -95,6 +111,8 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

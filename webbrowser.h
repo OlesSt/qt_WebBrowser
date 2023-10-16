@@ -2,6 +2,7 @@
 #define WEBBROWSER_H
 
 #include <QMainWindow>
+#include <QWebEngineView>
 
 namespace Ui {
 class WebBrowser;
@@ -15,8 +16,18 @@ public:
     explicit WebBrowser(QWidget *parent = nullptr);
     ~WebBrowser();
 
+    void loadPage();
+
+public slots:
+    void pushBack();
+    void pushForward();
+    void pushUpdate();
+    void pushFind();
+
 private:
     Ui::WebBrowser *ui;
+    QWebEngineView *webEngineView;
+
 };
 
 #endif // WEBBROWSER_H
